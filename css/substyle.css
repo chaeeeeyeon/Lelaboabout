@@ -1,0 +1,1051 @@
+@font-face {
+    font-family: 'bell';
+    src: url('../font/bellgothicstd-black-webfont.woff');
+}
+
+@font-face {
+    font-family: 'sang';
+    src: url('../font/SangSangClover_Regular.woff');
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/NotoSans-Regular.woff');
+}
+@keyframes soft {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+html {
+    background-color: #f2f2f2;
+}
+body {
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+header{
+    width: 100%;
+    height: 16vh;
+}
+header .inner {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header .inner .logo{
+    width: 300px;
+}
+
+header .inner h1 {
+    font-size: 0;
+}
+.submenu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #f2f2f2;
+    z-index: 9999;
+    display: none;
+    animation: soft 1s ease-out;
+    color: #333333;
+}
+.submenu .close {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+.submenu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60%;
+    font-family: 'bell';
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    background-image: url(../img/lelabo_mainsub_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'sang';
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    align-items: center;
+}
+main .text{
+    margin-top: 3%;
+    letter-spacing: 0.2rem;
+    color: #333333;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    width: 50%;
+}
+.first{
+    width: 80%;
+    margin: 20% auto;
+    text-align: center;
+}
+.first .text1{
+    font-family: 'sang';
+    margin-bottom: 25%;
+    color: #333333;
+}
+.first .text2{
+    font-family: 'sang';
+    margin-bottom: 25%;
+    color: #333333;
+    margin-left: 45%;
+}
+.first .text3{
+    font-family: 'sang';
+    margin-bottom: 25%;
+    color: #333333;
+    margin-bottom: 0;
+    margin-right: 40%;
+}
+.first .text1 h2{
+    margin-bottom: 2%;
+    font-size: 4rem;
+}
+.first .text2 h2{
+    margin-bottom: 2%;
+    font-size: 4rem;
+}
+.first .text3 h2{
+    margin-bottom: 2%;
+    font-size: 4rem;
+}
+.first .text1 p{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+.first .text2 p{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+.first .text3 p{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+.first .text1 p>span{
+    font-weight: bold;
+}
+.first .text2 p>span{
+    font-weight: bold;
+}
+.first .text3 p>span{
+    font-weight: bold;
+}
+.second {
+    width: 85%;
+    margin: 20% auto;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    color: #333333;
+}
+.second h3 {
+    font-family: 'sang';
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+.third {
+    width: 65%;
+    margin: 20% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.third h2 {
+    text-align: right;
+    font-family: 'bell';
+    font-size: 5rem;
+    margin: 10% 0;
+    color: #333333;
+}
+.third .text {
+    font-family: 'sang';
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: #333333;
+}
+.third .text .tinner {
+    margin: 5% 0;
+}
+.third .text .tinner:nth-child(12) {
+    font-weight: bold;
+}
+.four{
+    width: 85%;
+    margin: 20% auto;
+    height: 110vh;
+}
+.four h2{
+    text-align: right;
+    font-family: 'bell';
+    font-size: 5rem;
+    margin-bottom: 20%;
+    color: #333333;
+}
+.four .lab_img{
+    display: flex;
+    justify-content: space-between;
+}
+.four .lab_img .box{
+    width: 23%;
+}
+.four .lab_img .box .textbox{
+    margin-top: 10%;
+    font-family: 'sang';
+    letter-spacing: 0.4rem;
+    color: #333333;
+}
+.four .lab_img .box .textbox h4{
+    font-size: 1.7rem;
+}
+.four .lab_img .box .textbox p{
+    font-size: 1.6rem;
+    margin-top: 5%;
+    line-height: 2rem;
+}
+.five {
+    width: 85%;
+    margin: 20% auto;
+}
+.five h2 {
+    text-align: center;
+    font-family: 'bell';
+    font-size: 5rem;
+    margin-bottom: 10%;
+    color: #333333;
+}
+.five .video {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'sang';
+    width: 100%;
+    margin-bottom: 1%;
+}
+.five .video .text{
+    margin-top: 1%;
+    letter-spacing: 0.2rem;
+    width: 40%;
+    color: #333333;
+    margin-left: 3%;
+}
+.five .video .text h4{
+    margin-bottom: 3%;
+    font-size: 1.8rem;
+}
+.five .video .text h5{
+    margin-bottom: 3%;
+    font-size: 1.7rem;
+}
+.five .video .text p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.six {
+    width: 80%;
+    margin: 20% auto;
+}
+.six h2{
+    text-align: center;
+    font-family: 'bell';
+    font-size: 5rem;
+    margin-bottom: 10%;
+    color: #333333;
+}
+.six .box{
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0;
+}
+.six .box .text{
+    font-family: 'sang';
+    width: 40%;
+}
+.six .box .text h4{
+    margin-bottom: 10%;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+}
+.six .box .text p{
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+}
+footer{
+    width: 100%;
+    height: 80vh;
+    border-top: 3px solid #9c9c9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .inner{
+    width: 80vw;
+}
+footer .inner .top{
+    display: flex;
+    justify-content: space-between;
+}
+footer .inner .top .text ul{
+    font-family: 'sang';
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.5rem;
+}
+footer .inner .top .text ul li:nth-child(1){
+    font-weight: bold;
+}
+footer .inner .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+    font-family: 'sang';
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+}
+footer .inner .bottom figure{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 90%;
+    }
+    header .inner .menu{
+        width: 40px;
+    }
+    .submenu .close{
+        left: 90%;
+        width: 60px;
+    }
+    .submenu ul{
+        font-size: 2.9rem;
+    }
+    main .biglogo img{
+        width: 650px;
+        height: 270px;
+    }
+    main .text{
+        font-size: 1.4rem;
+    }
+    .first .text1 h2{
+        font-size: 3rem;
+    }
+    .first .text2 h2{
+        font-size: 3rem;
+    }
+    .first .text3 h2{
+        font-size: 3rem;
+    }
+    .first .text1 p{
+        font-size: 2rem;
+    }
+    .first .text2 p{
+        font-size: 2rem;
+    }
+    .first .text3 p{
+        font-size: 2rem;
+    }
+    .second img{
+        width: 50px;
+        height: 30px;
+    }
+    .second h3 {
+        font-size: 1.7rem;
+    }
+    .third h2{
+        font-size: 4rem;
+    }
+    .third .text{
+        font-size: 1.6rem;
+    }
+    .third .text .tinner{
+        margin: 7% 0;
+    }
+    .four{
+        height: 145vh;
+    }
+    .four h2{
+        font-size: 4rem;
+    }
+    .four .lab_img{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    } 
+    .four .lab_img .box{
+        width: 50%;
+        margin-bottom: 3%;
+    }
+    .four .lab_img .box .textbox{
+        width: 350px;
+    }
+    .four .lab_img .box .textbox h4{
+        font-size: 1.5rem;
+    }
+    .four .lab_img .box .textbox p{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.3rem;
+    }
+    .five h2{
+        font-size: 4rem;
+    }
+    .five .slide .video>video{
+        width: 60%;
+    }
+    .five .slide .video .text{
+        margin-left: 3%;
+    }
+    .five .slide .video .text h4{
+        font-size: 1.6rem;
+    }
+    .five .slide .video .text h5{
+        font-size: 1.5rem;
+    }
+    .five .video .text p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .six h2{
+        font-size: 4rem;
+    }
+    .six .box .text{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .six .box .text h4{
+        font-size: 1.5rem;
+    }
+    .six .box .text p{
+        font-size: 1.4rem;
+    }
+    footer .inner .top .text ul{
+        font-size: 1.3rem;
+    }
+    footer .inner .bottom p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 80%;
+    }
+    header .inner .menu{
+        width: 40px;
+    }
+    .submenu .close{
+        left: 85%;
+        width: 60px;
+    }
+    .submenu ul{
+        font-size: 2.8rem;
+    }
+    main .biglogo img {
+        width: 470px;
+        height: 220px;
+    }
+    main .text {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .first .text1 h2 {
+        font-size: 2.3rem;
+    }
+    .first .text2 h2 {
+        font-size: 2.3rem;
+    }
+    .first .text3 h2 {
+        font-size: 2.3rem;
+    }
+    .first .text1 p{
+        font-size: 1.5rem;
+    }
+    .first .text2 p{
+        font-size: 1.5rem;
+    }
+    .first .text3 p{
+        font-size: 1.5rem;
+    }
+    .second img{
+        width: 35px;
+        height: 20px;
+    }
+    .second h3 {
+        font-size: 1.4rem;
+    }
+    .third h2{
+        font-size: 3rem;
+    }
+    .third .text{
+        font-size: 1.4rem;
+    }
+    .third .text .tinner {
+        margin: 8% 0;
+    }
+    .four{
+        height: 135vh;
+    }
+    .four h2 {
+        font-size: 3rem;
+        margin-bottom: 20%;
+    }
+    .four .lab_img{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    } 
+    .four .lab_img .box{
+        width: 45%;
+        margin-bottom: 3%;
+    }
+    .four .lab_img .box .textbox{
+        width: 330px;
+    }
+    .four .lab_img .box .textbox h4{
+        font-size: 1.3rem;
+    }
+    .four .lab_img .box .textbox p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .five h2{
+        font-size: 3rem;
+    }
+    .five .video{
+        flex-direction: column;
+        align-items: center;
+    }
+    .five .slide .video>video{
+        width: 90%;
+    }
+    .five .slide .video .text{
+        width: 80%;
+        margin: 5% 0;
+    }
+    .five .slide .video .text h4{
+        font-size: 1.6rem;
+    }
+    .five .slide .video .text h5{
+        font-size: 1.5rem;
+    }
+    .five .video .text p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .six h2 {
+        font-size: 3rem;
+    }
+    .six .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .six .box .text{
+        width: 80%;
+        margin: 5% 0;
+    }
+    .six .box .text h4{
+        font-size: 1.4rem;
+    }
+    .six .box .text p{
+        font-size: 1.3rem;
+    }
+    footer{
+        height: 50vh;
+    }
+    footer .inner .top{
+        display: none;
+    }
+    footer .inner .bottom p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:540px) and (max-width:766px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 80%;
+    }
+    header .inner .menu{
+        width: 35px;
+    }
+    .submenu .close{
+        left: 85%;
+        width: 55px;
+    }
+    .submenu ul{
+        font-size: 2.7rem;
+    }
+    main .biglogo img {
+        width: 350px;
+        height: 160px;
+    }
+    main .text {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    .first .text1 h2{
+        font-size: 2rem;
+    }
+    .first .text2 h2{
+        font-size: 2rem;
+    }
+    .first .text3 h2{
+        font-size: 2rem;
+    }
+    .first .text1 p{
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+    .first .text2 p{
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+    .first .text3 p{
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+    .second img{
+        width: 23px;
+        height: 14px;
+    }
+    .second h3 {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    .third h2{
+        font-size: 2.4rem;
+    }
+    .third .text{
+        font-size: 1.3rem;
+    }
+    .third .text .tinner {
+        margin: 8% 0;
+    }
+    .four{
+        height: 120vh;
+    }
+    .four h2 {
+        font-size: 2.4rem;
+        margin-bottom: 20%;
+    }
+    .four .lab_img{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    } 
+    .four .lab_img .box{
+        width: 45%;
+        margin-bottom: 3%;
+    }
+    .four .lab_img .box .textbox{
+        width: 230px;
+    }
+    .four .lab_img .box .textbox h4{
+        font-size: 1.2rem;
+    }
+    .four .lab_img .box .textbox p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .five h2{
+        font-size: 2.4rem;
+    }
+    .five .video{
+        flex-direction: column;
+        align-items: center;
+    }
+    .five .slide .video>video{
+        width: 90%;
+    }
+    .five .slide .video .text{
+        width: 80%;
+        margin: 5% 0;
+    }
+    .five .slide .video .text h4{
+        font-size: 1.5rem;
+    }
+    .five .slide .video .text h5{
+        font-size: 1.4rem;
+    }
+    .five .video .text p{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .six h2 {
+        font-size: 2.4rem;
+    }
+    .six .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .six .box .text{
+        width: 80%;
+        margin: 5% 0;
+    }
+    .six .box .text h4{
+        font-size: 1.3rem;
+    }
+    .six .box .text p{
+        font-size: 1.2rem;
+    }
+    footer{
+        height: 50vh;
+    }
+    footer .inner .top{
+        display: none;
+    }
+    footer .inner .bottom p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 539px){
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 70%;
+    }
+    header .inner .menu{
+        width: 30px;
+    }
+    .submenu .close{
+        left: 80%;
+        width: 50px;
+    }
+    .submenu ul{
+        font-size: 2.5rem;
+    }
+    main .biglogo img{
+        width: 200px;
+        height: 100px;
+    }
+    main .text{
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        width: 60%;
+    }
+    .first .text1 h2{
+        font-size: 1.5rem;
+    }
+    .first .text2 h2{
+        font-size: 1.5rem;
+    }
+    .first .text3 h2{
+        font-size: 1.5rem;
+    }
+    .first .text1 p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .first .text2 p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .first .text3 p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .second img{
+        width: 14px;
+        height: 10px;
+    }
+    .second h3{
+        font-size: 0.9rem;
+        width: 70%;
+        line-height: 1rem;
+    }
+    .third h2{
+        font-size: 2rem;
+    }
+    .third .text {
+        font-size: 0.9rem;
+    }
+    .third .text .tinner {
+        margin: 7% 0;
+    }
+    .four{
+        height: 120vh;
+    }
+    .four h2{
+        font-size: 2rem;
+    }
+    .four .lab_img{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    .four .lab_img .box{
+        width: 43%;
+        margin-bottom: 3%;
+    }
+    .four .lab_img .box .textbox{
+        width: 170px;
+    }
+    .four .lab_img .box .textbox h4{
+        font-size: 1.2rem;
+    }
+    .four .lab_img .box .textbox p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .five h2 {
+        font-size: 2rem;
+    }
+    .five .video {
+        flex-direction: column;
+        align-items: center;
+    }
+    .five .slide .video>video {
+        width: 90%;
+    }
+    .five .slide .video .text{
+        margin: 5% 0;
+        width: 80%;
+    }
+    .five .slide .video .text h4 {
+        font-size: 0.9rem;
+    }
+    .five .slide .video .text h5 {
+        font-size: 1rem;
+    }
+    .five .video .text p{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .six h2{
+        font-size: 2rem;
+    }
+    .six .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .six .box .text{
+        width: 80%;
+        margin: 5% 0;
+    }
+    .six .box .text h4{
+        font-size: 1rem;
+    }
+    .six .box .text p{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    footer{
+        height: 50vh;
+    }
+    footer .inner .top{
+        display: none;
+    }
+    footer .inner .bottom p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:400px){
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 60%;
+    }
+    header .inner .menu{
+        width: 30px;
+    }
+    .submenu .close{
+        left: 80%;
+        width: 50px;
+    }
+    .submenu ul{
+        font-size: 2rem;
+    }
+    main .biglogo img{
+        width: 160px;
+        height: 70px;
+    }
+    main .text{
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        width: 70%;
+    }
+    .first .text1 h2{
+        font-size: 1.5rem;
+    }
+    .first .text2 h2{
+        font-size: 1.5rem;
+    }
+    .first .text3 h2{
+        font-size: 1.5rem;
+    }
+    .first .text1 p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .first .text2 p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .first .text3 p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .second img{
+        width: 13px;
+        height: 6px;
+    }
+    .second h3{
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+        width: 70%;
+    }
+    .third h2{
+        font-size: 1.8rem;
+    }
+    .third .text {
+        font-size: 0.8rem;
+    }
+    .third .text .tinner {
+        margin: 7% 0;
+    }
+    .four{
+        height: 80vh;
+    }
+    .four h2{
+        font-size: 1.8rem;
+        margin-bottom: 20%;
+    }
+    .four .lab_img{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    } 
+    .four .lab_img .box{
+        width: 43%;
+        margin-bottom: 3%;
+    }
+    .four .lab_img .box .textbox{
+        width: 170px;
+    }
+    .four .lab_img .box .textbox h4{
+        font-size: 1.1rem;
+    }
+    .four .lab_img .box .textbox p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .five h2 {
+        font-size: 1.8rem;
+    }
+    .five .video {
+        flex-direction: column;
+        align-items: center;
+    }
+    .five .slide .video>video {
+        width: 90%;
+    }
+    .five .slide .video .text{
+        margin: 5% 0;
+        width: 80%;
+    }
+    .five .slide .video .text h4 {
+        font-size: 0.8rem;
+    }
+    .five .slide .video .text h5 {
+        font-size: 0.9rem;
+    }
+    .five .video .text p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .six h2{
+        font-size: 1.8rem;
+    }
+    .six .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .six .box .text{
+        width: 80%;
+        margin: 5% 0;
+    }
+    .six .box .text h4{
+        font-size: 0.9rem;
+    }
+    .six .box .text p{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+    footer{
+        height: 40vh;
+    }
+    footer .inner{
+        width: 100vw;
+    }
+    footer .inner .top{
+        display: none;
+    }
+    footer .inner .bottom p{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+}
+
